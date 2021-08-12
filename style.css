@@ -157,12 +157,6 @@ a {
   width:min-content;
   height: 620px;
 }
-.videoContainer video{
-  margin-top: 140px;
-  width: 520px;
-  height: auto;
-  
-}
 .since{
   background-color: #a76e63;
   width: 80px;
