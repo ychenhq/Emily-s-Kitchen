@@ -1,0 +1,292 @@
+:root {
+    --header-height: 3rem;
+  
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color),69%,61%);
+    --first-color-second: hsl(var(--hue-color),69%,61%);
+    --first-color-alt: hsl(var(--hue-color),57%,53%);
+    --first-color-lighter:hsl(var(--hue-color),92%,85%) ;
+    --title-color: hsl(var(--hue-color),8%,15%);
+    --text-color: hsl(var(--hue-color),8%,45%);
+    --text-color-light: hsl(var(--hue-color),8%,65%);
+    --input-color: hsl(var(--hue-color),70%,96%);
+    --body-color: hsl(var(--hue-color),60%,99%);
+    --container-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color),12%,99%);
+    --scroll-thumb-color: hsl(var(--hue-color),12%,90%);
+  
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+  
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 3rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .85rem;
+        --small-font-size:.575rem ;
+        --smaller-font-size: .5rem;
+  
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
+}
+  
+  /* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 4rem;
+        --h1-font-size: 3rem;
+        --h2-font-size: 2.5rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+        --small-font-size:.875rem ;
+        --smaller-font-size: .831rem;
+    }
+}
+  .wrap {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+}
+  /**/
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&display=swap');
+
+.nav{
+  display: flex;
+  min-height: 70px;
+}
+.header {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+  header{
+    position: absolute;
+    width:"100%";
+    top: 0;
+    left: 0;
+    padding: var(--mb-0-5);
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+}
+  .logo_img_container{
+    display: flex;
+  }
+  .name{
+    display: flex;
+    width: 200px;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    align-items:  center;
+    font-size: var(--h3-font-size);
+    color:var(--first-color);
+  }
+  .name:hover{
+    color: var(--text-color);
+  }
+  .logo_img{
+    position: relative;
+    max-width: 100px;
+  }
+  header ul{
+    position: relative;
+    display: flex;
+  }
+  
+  .nav_bar{
+    width: 90%;
+    padding: 1rem .5rem .5rem 2rem ;
+  }
+  
+  header  ul li a{
+    display: inline-block;
+    color:var(--text-color);
+    font-weight: 400;
+    margin-left: 30px;
+    text-decoration: none;
+  }
+  .about_navlist{
+    position: relative;
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    color: var(--first-color);
+  }
+  .nav_items:hover{
+    color:var(--text-color);
+  }
+
+
+  
+/*home*/
+.home{
+  text-align: center;
+ display: grid;
+ padding: var(--mb-3);
+}
+
+
+
+
+/*main*/
+.main{
+  margin-top: 150px;
+  position: relative;
+}
+
+.line_start{
+  border-top: 3px solid var(--first-color);
+  padding-bottom: var(--mb-0-5);
+}
+
+.line_end{
+  border-bottom: 3px solid var(--first-color);
+  padding-top: var(--mb-0-5);
+}
+.home_pic{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(./images/CinnamonRolls.jpg);
+  padding-top: var(--mb-3);
+  padding-bottom: var(--mb-3);
+}
+.home_main_pic{
+  max-width: 100%;
+}
+
+
+/*steps*/
+
+.steps{
+  display: flex;
+  border-top: 2px solid var(--first-color-alt);
+}
+.ingredients_container{
+  padding-left: var(--mb-3);
+  padding-right: var(--mb-3);
+  border-right: 2px solid var(--first-color-alt);
+}
+
+.steps_container{
+  padding-left: var(--mb-3);
+  padding-right: var(--mb-3);
+}
+
+
+
+
+
+
+/*footer*/
+
+.footer img{
+  position: relative;
+  width: 10%;
+  height: auto;
+}
+
+.footer{
+  padding-top: 2rem;
+}
+
+.footer_container{
+  row-gap: 3.5rem;
+  display: flex;
+}
+.footer_left{
+  margin-left: var(--mb-3);
+  
+}
+
+.footer_bg{
+background-color: var(--first-color-lighter); 
+ padding:2rem 0 3rem;
+}
+
+.footer_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+  padding-left: 2.5rem;
+}
+.footer_subtitle{
+  font-size: var(--small-font-size);
+  padding-left: 2.5rem;
+  
+}
+
+.footer_links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding-top: var(--mb-3);
+  list-style: none;
+
+}
+.footer_link{
+  text-decoration: none;
+  color:black;
+}
+.footer_link:hover{
+  color: var(--first-color);
+}
+
+.footer_socials{
+display: flex;
+ flex-direction: column;
+ position: absolute;
+ right: 100px;
+}
+
+.footer_social{
+  font-size: 1.25rem;
+  margin: var(--mb-1-5);
+}
+
+.footer_social:hover{
+  color: var(--first-color-lighter);
+}
+
+.footer_copy{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+/* .footer_title, .footer_subtitle, .footer_link, .footer_link, .footer_social{
+  color: #FFF;
+} */
