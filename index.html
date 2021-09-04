@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" id="home">
+            <div class="circle"></div>
+            <header class="nav_bar">
+                <a href="index.html" class="logo_img_container">
+                    <img src="./images/icon.png" alt="" class="logo_img">
+
+                </a>
+
+                <a href="index.html" class="name">Emily's Kitchen</a>
+                <ul class="about_navlist">
+                    <li class="nav_items"> <a href="#home"> Home</a></li>
+                    <li class="nav_items"><a href="#about"> About</a></li>
+                    <li class="nav_items"><a href="#beginner">BeginnerInfo</a> </li>
+                    <li class="nav_items"> <a href="#showcase"> Showcase</a></li>
+                    <li class="nav_items"> <a href="#contact"> ContactMe</a></li>
+                </ul>
+
+            </header>
+            <div class="about_main">
+                <div class="content">
+                    <h2 class="about_title">Hay! WUT's UP! </h2>
+                    <h2 class="about_subtitle"> Ur at Emily's Kitchen!</h2>
+                    <p class="about_description">Just a girl who makes desserts as an interest </p>
+                    <a href="#about" class="about_button"> Learn more <i class="uil uil-arrow-circle-right"></i></a>
+                </div>
+                <div class="about_img">
+                    <img class="about_main_pic" src="./images/Sarradura_Pudding.png">
+                </div>
+
+            </div>
+
+            <div class="about_contact">
+                <ul class="about_contact_list">
+                    <li class="contact_list">
+                        <a href="" class="contact_list_icon">
+                            <i class="uil uil-facebook-f contact_icon"></i>
+                        </a>
+
+                    </li>
+                    <li class="contact_list">
+                        <a href="" class="contact_list_icon">
+                            <i class="uil uil-instagram contact_icon"></i>
+                        </a>
+
+                    </li>
+                    <li class="contact_list">
+                        <a href="" class="contact_list_icon">
+                            <i class="uil uil-linkedin-alt contact_icon"></i>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="dessert_choice">
+                <ul class="dessert_list">
+                    <li class="dessert_icon">
+                        <img src="./images/Sarradura_Pudding.png" onclick="imgSlider('./images/Sarradura_Pudding.png');
+                            changeCircleColor=('#966969')" class="dessert_icon1">
+                    </li>
+                    <li class="dessert_icon">
+                        <img src="./images/pancake.png" onclick="imgSlider('./images/pancake.png');
+                            changeCircleColor=('#d3bbab')" class="dessert_icon2">
+                    </li>
+                    <li class="dessert_icon">
+                        <img src="./images/Brownies.png" onclick="imgSlider('./images/Brownies.png')
+                            ;changeCircleColor=('#3d250b')" class="dessert_icon3">
+                    </li>
+                    <li class="dessert_icon">
+                        <img src="./images/NewYorkCheeseCake.png" onclick="imgSlider('./images/NewYorkCheeseCake.png')
+                            ;changeCircleColor=('#f0d0ad')" class="dessert_icon4">
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- <div class="videoContainer">
+                <iframe class="video" width="600" height="420"
+                    src="https://www.youtube.com/embed/CAwjwnTtOUo?autoplay=1&mute=1&loop=1&controls=0" frameborder="0"
+                    ng-show="showvideo">
+                </iframe>
+            </div>
+            <div class="since">
+                <h3>Since 2021</h3>
+            </div> -->
+
+        </div>
+
+        <div class="about" id="about">
+            <div class="aboutBox">
+                <div class="photo"><a href="https://ychenhq.github.io/website"><img src="./images/photo.JPG" alt=""
+                            class="about_photo">
+                    </a>
+                    <h2 class="photo_title">Hi! I'm Emily! Click to see my personal website! <a
+                            href="https://ychenhq.github.io/website/"><i
+                                class="uil uil-arrow-circle-right link_icon"></i></a>
+                    </h2>
+                </div>
+
+
+                <div class="selfintro">
+                    <li class="funfacts">
+                        <ul class="fact1">
+                            <h2 class="title">A little about me</h2>
+                            <h3 class="titles">💡Uni:</h3>
+                            <p>Year 2 / Majoring CS in Hong Kong University of Science and
+                                Technology.</p>
+                            <h3 class="titles"> 💡From:</h3>
+                            <p> Taiwan</p>
+                            <p>Hi, I'm Emily. Besides being computing, I love making desserts! Hope you find this page
+                                useful! </p>
+
+                        </ul>
+                        <ul class="fact2">
+                            <h2 class="title">My Hobbies</h2>
+                            <p>👩‍🍳 Cooking <br> 🍪 Baking <br>
+                                🥾 Hiking <br>
+                                🏐 Volleyball <br>
+                                🏸 Badminton <br>
+                                🎬 Binging dramas
+                                <br>
+                                🎹 Playing the Piano <br>
+                                💻 Web Development <br>
+                            </p>
+
+                        </ul>
+                        <ul class="fact3">
+                            <h2 class="title">Contact Info</h2>
+                            <div class="contact_info_icon">
+                                <a href="https://www.instagram.com/yio.hall_made_desserts/"><i
+                                        class="uil uil-bell contact_icon"></i></a>
+                                <a href="https://www.instagram.com/nehzuy_nehc_0315/"><i
+                                        class="uil uil-instagram contact_icon"></i></a>
+                                <a href="https://www.linkedin.com/in/yu-zhen-chen-64a500201/"><i
+                                        class="uil uil-linkedin-alt contact_icon"></i></a>
+                                <a href="mailto:cdemily910315@gmail.com?subject = Feedback&body = Message"><i
+                                        class="uil uil-envelope contact_icon"></i></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100004722392004"><i
+                                        class="uil uil-facebook-f contact_icon"></i></a>
+                                <a href="https://www.peing.net/zh-TW/0946343efc0e79"><i
+                                        class="uil uil-box contact_icon"></i></a>
+                            </div>
+
+
+
+                        </ul>
+
+                    </li>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="BasicsForBaking" id="beginner">
+            <h2>Guidelines For Beginners</h2>
+            <h3><i class="fas fa-laugh-squint"></i> For all ages!</h3>
+            <div class="Content">
+                <li class="Content1">
+                    <div class="imgContainer"><img src="./images/CookWare.gif" alt="">
+                    </div>
+                    <h6 class="Guidelines"> Tools You Definitely Need</h6>
+                    <ul class="GuideContent">
+                        <p>-Measuring Cups (Liquid and Dry) and Spoons <br>
+                            -Rubber Spatula/Scraper <br>
+                            -Pastry Brush <br>
+                            -Whisk <br>
+                            -Kitchen Scissors <br>
+                            -Rolling Pin <br>
+                            -Fine-Mesh Sieve <br>
+                            -Wire Rack <br>
+                            -Baking Sheet/Cookie Sheet/Sheet Pan <br>
+                            -Parchment Paper <br>
+                            -Differnt Shaped Molds <br>
+                        </p>
+                        <p1>Sometimes it is easier to have less tools unless you're a pro.</p1>
+                    </ul>
+                </li>
+                <li class="Content2">
+                    <div class="imgContainer"><img src="./images/oven.gif" alt=""></div>
+                    <h6 class="Guidelines"> Pre-Heat the Oven</h6>
+                    <ul class="GuideContent">
+                        <p>Make sure you pre-heat the oven at least ten minutes before you hand in your unbaked
+                            ingredients!
+                            Else things will end up unexpectedly!</p>
+                    </ul>
+
+                </li>
+                <li class="Content3">
+                    <div class="imgContainer"><img src="./images/positive.gif" alt=""></div>
+                    <h6 class="Guidelines"> Do Not Panic</h6>
+                    <ul class="GuideContent">
+                        <p>It is always true that beginners tend to follow every step for fear of failures. However,
+                            there
+                            are times that things go off track. Keep in mind that even proffesionals make mistakes
+                            constantly. Unless you burnt down your house, any mistake is tolerable. Just clean up the
+                            mess
+                            and try once again!</p>
+                    </ul>
+
+                </li>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/826d1f650f.js" crossorigin="anonymous"></script>
+
+    <div class="showcase" id="showcase">
+        <h2>Dessert Showcase</h2>
+        <br>
+        <div class="process-wrapper">
+            <div id="progress-bar-container">
+                <ul>
+                    <li class="step step01 active">
+                        <div class="step-inner">Beginner</div>
+                    </li>
+                    <li class="step step02">
+                        <div class="step-inner">Medium</div>
+                    </li>
+                    <li class="step step03">
+                        <div class="step-inner">Intermediate</div>
+                    </li>
+                    <li class="step step04">
+                        <div class="step-inner">Creative</div>
+                    </li>
+                    <li class="step step05">
+                        <div class="step-inner">Experienced</div>
+                    </li>
+                </ul>
+
+                <div id="line">
+                    <div id="line-progress"></div>
+                </div>
+            </div>
+
+            <div id="progress-content-section">
+                <div class="section-content discovery active">
+                    <h2 class="what">Cinnamon Rolls <a href="./receipe/cinnamon_rolls/index.html"><i
+                                class="uil uil-arrow-circle-right receipe_icon"></i></a></h2>
+                    <div class="showcase_img">
+                        <img src="./images/CinnamonRolls.jpg" alt="CinnamonRolls" class="showcase_image cinnamon_rolls">
+                        <div class="steps">
+                            <h3 class="ingredients">Ingredients:</h3>
+                            <p class="ingredientsList"> Dough: <br> All-purpose flour 300g <br> Milk 205g <br> Butter
+                                52g
+                                <br>
+                                Sugar 40g <br>Yeast 3.1g <br> Salt <br>
+                                Stuffings: <br> Brown sugar 68g <br>Ground Cinnamon 5g (or the way you like) <br> Cream
+                                cheese
+                                (Optional) <br> Apple Sauce (Optional) Butter 78g <br>
+                                Decoration: <br> Powdered Sugar 80g <br> Water 20g
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-content strategy">
+                    <h2 class="what">New York CheeseCake<a href="./receipe/ny_cheesecake/index.html"><i
+                                class="uil uil-arrow-circle-right receipe_icon"></i></a></h2>
+                    <div class="showcase_img">
+                        <img src="./images/NY_cheesecake.png" alt="New York Cheese Cake"
+                            class="showcase_image NY_cheesecake">
+                        <div class="steps">
+                            <h3 class="ingredients">Ingredients:</h3>
+                            <p class="ingredientsList">Cream cheese 500mg <br>
+                                Egg Yolk *2 <br>
+                                Milk 50mg <br>
+                                Sugar 7TB <br>
+                                Greek Yogurt 60mg<br>
+                                Lemon juice 15mg <br>
+                                Gelatin 10mg <br>
+                                Butter 15mg</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="section-content creative">
+                    <h2 class="what">Tiramisu<a href="./receipe/tiramisu/index.html"><i
+                                class="uil uil-arrow-circle-right receipe_icon"></i></a></h2>
+                    <div class="showcase_img">
+                        <img src="./images/tiramisu.PNG" alt="Tiramisu" class="showcase_image tiramisu">
+                        <div class="steps">
+                            <h3 class="ingredients">Ingredients:</h3>
+                            <p class="ingredientsList">300ml Heavy Cream <br>
+                                Egg yolks *4<br>
+                                Heavy cream 250g <br>
+                                Mill 60g
+                                5TB sugar <br>
+                                Coffee Extract 100mg <br>
+                                7 digestive cookies <br>
+                                15mg butter <br>
+                                Gelatin 25mg</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-content production">
+                    <h2 class="what">Ocean Cake <a href="./receipe/ocean_cake/index.html"><i
+                                class="uil uil-arrow-circle-right receipe_icon"></i></a></h2>
+                    <div class="showcase_img">
+                        <img src="./images/Ocean Cake.PNG" alt="Ocean Cake" class="showcase_image ocean_cake">
+                        <div class="steps">
+                            <h3 class="ingredients">Ingredients:</h3>
+                            <p class="ingredientsList">300ml Heavy Cream <br>
+                                2 egg yolks <br>
+                                5TB sugar <br>
+                                2 mangos <br>
+                                7 digestive cookies <br>
+                                15mg butter <br>
+                                1 drop of blue food coloring <br>
+                                40mg gelatin</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="section-content analysis">
+                    <a href="./"></a>
+                    <h2 class="what">Raspberry CheeseCake<a href="./receipe/raspberry_cheesecake/index.html"><i
+                                class="uil uil-arrow-circle-right receipe_icon"></i></a></h2>
+                    <div class="showcase_img">
+                        <img src="./images/Raspberry Cheesecake.PNG" alt="Raspberry Cheesecake"
+                            class="showcase_image raspberry_cheesecake">
+                        <div class="steps">
+                            <h3 class="ingredients">Ingredients:</h3>
+                            <p class="ingredientsList">Cream cheese 500mg <br>
+                                Heavy cream 250mg <br>
+                                Sugar 7TB <br>
+                                Lemon juice 15mg <br>
+                                Strawberry *7 <br>
+                                Raspberry*15 <br>
+                                Gelatin 10mg <br>
+                                Chocolate chips 25mg <br>
+                                Digestive cookies 7 pieces <br>
+                                Butter 15mg</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container" id="contact">
+
+        <section class="contacts" id="main">
+            <div class="contacts_info">
+                <h2>Still Looking for more?</h2>
+                <h3> Contact hours & More info</h3>
+                <p class="officehour">⏳︎ Update Time: <br>Wednesday evening every 2 weeeks</p>
+                <p class="available">🕒 Available Time: <br> After 6p.m. on weekdays/Full time Saturday</p>
+                <p class="instagram">📸 Follow me on Instagram: <a
+                        href="https://www.instagram.com/yio.hall_made_desserts/">@yio.hall_made_desserts</a></p>
+                <p class="order">🎂 Customize desserts: <br>Contact Whatsapp +886 966442191 / DM Instagram account <a
+                        href="https://www.instagram.com/yio.hall_made_desserts/">@yio.hall_made_desserts</a></p>
+                <p class="lastwords"> Hope you liked my page! If you want to
+                    contact me for further homemade cakes or cookies, please click "Contact Info" on the page above.
+                    <br>More recipes will be uploaded in the future. Stay tuned!
+                </p>
+            </div>
+
+
+
+
+        </section>
+        <aside id="sidebar">
+            <form action="" class="contact_form grid">
+                <div class="contact_inputs grid">
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Name</label>
+                        <input type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Email</label>
+                        <input type="email" class="contact_input">
+                    </div>
+                </div>
+                <div class="contact_content">
+                    <label for="" class="contact_label">Project</label>
+                    <input type="text" class="contact_input">
+                </div>
+                <div class="contact_content">
+                    <label for="" class="contact_label">Message</label>
+                    <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                </div>
+
+                <div>
+                    <a href="#" class="button button--flex">
+                        Send Message <i class="uil uil-message button_icon"></i>
+                    </a>
+                </div>
+            </form>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video width="500" height="500" autoplay muted src="./images/pancake.MP4"
+                            type="video/mp4"></video>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="image" src="./images/OreoCheeseCake.PNG" alt="cake" title="A dessert">
+                    </div>
+                    <div class="carousel-item">
+                        <video width="500" height="500" autoplay muted src="./images/Cheesecake.MP4"
+                            type="video/mp4"></video>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="image" src="./images/MangoCrepeCake.PNG" alt="cake" title="Crepe Cake">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </aside>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Emily</h1>
+                    <span class="footer_subtitle">Frontend developer</span>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#services" class="footer_link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">ContactMe</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="footer_socials">
+                    <a href="" class="footer_social" target="_blank" class="footer_social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="" class="footer_social" target="_blank" class="footer_social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="" class="footer_social" target="_blank" class="footer_social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer_copy">&#169; Emily. All Rights Reserved</p>
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.about_main_pic').src = anything;
+        }
+
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+            console.log(circle.background);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+        $(".step").click(function () {
+            $(this).addClass("active").prevAll().addClass("active");
+            $(this).nextAll().removeClass("active");
+        });
+
+        $(".step01").click(function () {
+            $("#line-progress").css("width", "3%");
+            $(".discovery").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step02").click(function () {
+            $("#line-progress").css("width", "25%");
+            $(".strategy").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step03").click(function () {
+            $("#line-progress").css("width", "50%");
+            $(".creative").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step04").click(function () {
+            $("#line-progress").css("width", "75%");
+            $(".production").addClass("active").siblings().removeClass("active");
+        });
+
+        $(".step05").click(function () {
+            $("#line-progress").css("width", "100%");
+            $(".analysis").addClass("active").siblings().removeClass("active");
+        });
+
+
+    </script>
+</body>
+
+
+</html>
